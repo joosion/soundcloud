@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="current"></div>
+    <div class="runtime"></div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        var runTime = 209000;//ms
+        var playTime = 0;
+
+        function converter(len, ele) {
+            var min = len / 1000 / 60;
+                min = parseInt(min);
+            var sec = (len / 1000 / 60 - min) * 60;
+                sec = Math.round(sec);
+            
+            if(min < 10){
+                min = "0" + min
+            }
+
+            if(sec < 10){
+                sec = "0" + sec
+            }
+
+            $(ele).text(`${min}:${sec}`)
+        }
+
+        function current(){
+            var idx = playTime / runTime * 100
+                idx = Math.round(idx);
+            $(".sound .wave i").eq(idx).addClass(".summit");
+
+            if(playTime == runTime){
+                clearInterval(play);
+            } else {
+                converter(playTime,".sound .now")
+                converter(playTime,".sound .now")
+            }
+            playTime += 1000    
+        }
+
+        var play = setInterval(current,1000);
+        current();
+        converter(runTime, ".sound .end");
+    </script>
+</body>
+</html>

@@ -1,0 +1,1322 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+body{
+    position: relative;
+}
+#container{
+    background-color: #060606;
+    overflow: hidden;
+
+}
+#fullpages{
+    position:relative
+}
+.songgauge{
+    position: fixed;
+    top: 30px;
+    opacity: 0;
+    left: 480px;
+    font-family:'Roboto';
+    font-weight: 100;
+    color: white;
+    width: 1200px;
+    margin: 0 auto;
+}
+.songgauge .gauge{
+    text-align: center;
+    margin: 0 auto;
+    width: 1050px;
+    height: 5px;
+    background-color: #4b4b4b;
+    margin-top: 15px;
+}
+/* 게이지 */
+@keyframes progress1 {
+    0% {
+      transform: scalex(0);
+      opacity: 1;
+    }
+    90% {
+      transform: scalex(0.9);
+      opacity: 1;
+    }
+    92% {
+      transform: scalex(0.92);
+      opacity: 1;
+    }
+    100% {
+      transform: scalex(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes progress2 {
+    0% {
+      transform: scale(.3,.8) translatez(0);
+      opacity: 0;
+    }
+    90% {
+      transform: scale(1,1) translatex(300px) translatez(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1,1) translatex(300px) translatez(0);
+      opacity: 0;
+    }
+  }
+.line:before {
+  animation: progress1 509000ms infinite;
+  transform-origin: 0 0;
+  content: "";
+  display: block;
+  opacity: 100%;
+  width: 1050px;
+  height: 100%;
+  background-color: #FF5500;
+}
+    
+/* 게이지 */
+.songgauge .song{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.songgauge .artist{
+    font-size: 13px;
+    text-align: left;
+}
+.songgauge .now{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.songgauge .end{
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+.containerwrap{
+    width: 100%;
+    background-color: #060606;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.con1{
+    width: 1920px;
+    height: 100vh;
+    background-image: url(/images/con1.png);
+    position: relative;
+
+}
+.con1 header{
+    padding-top: 80px;
+}
+.con1 header .con1logo{
+    width: 250px;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+.con1 header .con1logo img{
+    width: 250px;
+    height: auto;
+}
+.con1 header .user{
+    width: 205px;
+    height: 75px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    text-align: left;
+}
+.con1 header .user p{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+}
+.con1 header .user .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.con1 header .user .icon .icon2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 500px;
+    background-color: #FF5500;
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+.con1 input{
+    position: absolute;
+    top: 50px;
+    opacity: 0.5;
+    left: 51.5%;
+    border: unset;
+    outline: unset;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: unset;
+    width: 1100px;
+    height: 70px;
+    border-radius: 22px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight:300;
+    font-size: 30px;
+}
+.con1 input::placeholder{
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 85px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+/* header */
+.con1 .cdroom .cd{
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    width: 700px;
+    height: 700px;
+}
+.con1 .cdroom .cd{
+    animation: rotate_image 60s linear infinite;
+    transform-origin: 50% 50%;
+}
+ 
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+.con1 .play{
+    position: absolute;
+    right: 510px;
+    top: 455px;
+}
+.con1 .play img{
+    position: absolute;
+}
+.con1 .play .on{
+    display: none;
+}
+.con1 .play:hover .on{
+    display: block;
+}
+.con1 .play:hover .base{
+    display: none;
+}
+/* play */
+.con1 .prv{
+    position: absolute;
+    right: 630px;
+    top: 510px;
+}
+.con1 .prv img{
+    position: absolute;
+}
+.con1 .prv .on{
+    display: none;
+}
+.con1 .prv:hover .on{
+    display: block;
+}
+.con1 .prv:hover .base{
+    display: none;
+}
+/* pry */
+.con1 .nxt{
+    position: absolute;
+    right: 295px;
+    top: 510px;
+}
+.con1 .nxt img{
+    position: absolute;
+}
+.con1 .nxt .on{
+    display: none;
+}
+.con1 .nxt:hover .on{
+    display: block;
+}
+.con1 .nxt:hover .base{
+    display: none;
+}
+/* nxt */
+.con1 .txt{
+    text-align: left;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+.con1 .txt .song{
+    font-family: 'Roboto';
+    color: white;
+    font-size: 60px;
+    font-weight:100;
+    margin-bottom: 10px;
+}
+.con1 .txt .artist{
+    font-family: 'Roboto';
+    color: white;
+    font-size: 25px;
+    font-weight:100;
+    margin-bottom: 20px;
+}
+.con1 .txt .sub{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 100;
+}
+.con1 .txt .sub li{
+    height: auto;
+    float: left;
+    position: relative;
+}
+.con1 .txt .sub li img{
+    position: absolute;
+    top: 4px;
+}
+.con1 .txt .sub li .on{
+    display: none;
+}
+.con1 .txt .sub li:hover{
+    color: #FF5500;
+}
+.con1 .txt .sub li:hover .on{
+    display: block;
+}
+.con1 .txt .sub li:hover .base{
+    display: none;
+}
+.con1 .txt .sub li:last-child img{
+    position: absolute;
+    top: 9px;
+}
+.con1 .txt .sub li p{
+    padding-left: 30px;
+}
+.con1 .txt .sub li{
+    margin-right: 30px;
+}
+/* txt */
+.con1 .sound{
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    right: 0;
+    width: calc(100% - 300px);
+}
+.con1 .sound p{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 226px;
+    top: 0;
+    width: 85px;
+    height: 100%;
+}
+.con1 .sound .now{
+    left: 0;
+}
+.con1 .sound .end{
+    right: 0;
+}
+
+.con1 .sound .wave{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 226px;
+}
+
+.con1 .sound .wave i{
+    width: 100%;
+    display: block;
+    margin: 0 5px;
+    background: linear-gradient(to top, rgba(255,255,255,0.8),rgba(255,255,255,0.4));
+    /* background: linear-gradient(to bottom, #FF8000, #FF3600); */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+}
+
+.con1 .sound .wave i:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to TOP, #FF3600, #FF8000);
+    transition: all 1s;
+    opacity: 0;
+}
+
+.con1 .sound .wave i.summit:after{
+    opacity: 1;
+}
+
+.con1 .sound .wave i:nth-child(1){opacity: 0.2;}
+.con1 .sound .wave i:nth-child(2){opacity: 0.3;}
+.con1 .sound .wave i:nth-child(3){opacity: 0.4;}
+.con1 .sound .wave i:nth-child(4){opacity: 0.5;}
+.con1 .sound .wave i:nth-child(5){opacity: 0.6;}
+.con1 .sound .wave i:nth-child(6){opacity: 0.7;}
+.con1 .sound .wave i:nth-child(7){opacity: 0.8;}
+.con1 .sound .wave i:nth-child(8){opacity: 0.9;}
+
+.con1 .sound .wave i:nth-child(93){opacity: 0.9;}
+.con1 .sound .wave i:nth-child(94){opacity: 0.8;}
+.con1 .sound .wave i:nth-child(95){opacity: 0.7;}
+.con1 .sound .wave i:nth-child(96){opacity: 0.6;}
+.con1 .sound .wave i:nth-child(97){opacity: 0.5;}
+.con1 .sound .wave i:nth-child(98){opacity: 0.4;}
+.con1 .sound .wave i:nth-child(99){opacity: 0.3;}
+.con1 .sound .wave i:nth-child(100){opacity: 0.2;}
+/* con1 */
+.con2{
+    width: 1920px;
+    height: 100vh;
+    position: relative;
+}
+.gnb p{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #9A9AA6;
+    font-size: 20px;
+}
+.gnbgroup{
+    height: 100%;
+    width:160px;
+    margin-left: 48px;
+    text-align: left;
+}
+.gnb{
+    display: block !important;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999;
+    left: -500px;
+    top: 0%;
+    background-color: #18181D;
+    border-top-right-radius: 30px;
+    text-align: center;
+    color: white;
+    
+}
+.gnb .logo{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.gnb li{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight:300
+
+}
+
+.gnb li{
+    margin-bottom: 35px;
+    text-align: left;
+    position: relative;
+}
+.gnb1 li img{
+    position: absolute;
+    top: 1px;
+}
+.gnb1 li .on{
+    display: none;
+}
+.gnb li:hover .on{
+    display: block;
+}
+.gnb li:hover .base{
+    display:none;
+}
+.gnb li:hover p{
+    color: #FF5500;
+}
+.gnb1 .active p{
+    color: #FF5500;
+}
+.gnb1 .active .base{
+    display: none;
+}
+.gnb1 .active .on{
+    display: block;
+}
+.gnb1 li .back{
+    opacity: 0;
+    transition: 1s;
+}
+.gnb1 li.active .back{
+    opacity: 1;
+    transition: 1s;
+    position: absolute;
+    background-color: #FF5500;
+    width: 2px;
+    height: 40px;
+    right: -72px;
+    top: -5px;
+}
+.gnb1 li:last-child img{
+    position: absolute;
+    top: -1px;
+    left: -3.5px;
+}
+.gnb1 li:nth-child(2) img{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+.gnb li p{
+    padding-left: 35px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight:300;
+    color: white;
+}
+.gnb2 li:first-child img{
+    left: -4px;
+}
+.gnb2 li:nth-child(2) img{
+    position: absolute;
+    top: -1px;
+    left: -3px;
+}
+.gnb2 li:nth-child(3) img{
+    position: absolute;
+    top: 1px;
+    left: -3px;
+}
+.gnb2 li .on{
+    display: none;
+}
+.gnb .library{
+    margin-bottom: 25px;
+}
+.gnb .playlist{
+    margin-bottom: 25px;
+}
+.gnb .help li{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #9A9AA6;
+}
+.gnb2 li img{
+    position: absolute;
+}
+.gnb3 li img{
+    position: absolute;
+}
+ .gnb3 li .on{
+    display: none;
+}
+/* li */
+.gnb .set img{
+    position: absolute;
+}
+.gnb .set .on{
+    display: none;
+}
+.gnb .set:hover .base{
+    display: none;
+}
+ .gnb .set:hover .on{
+    display: block;
+}
+/* gnb */
+
+/* header */
+.con2 .container{
+    display: flex;
+}
+.con2 .container .left{
+    margin-top: 60px;
+    width: 405px;
+    height: 750px;
+    background-color: #18181D;
+    margin-left: 350px;
+    border-radius: 14px;
+    position: relative;
+}
+.con2 .container .left {
+    color: white;
+
+}
+.con2 .container .left .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    margin-left: 15px;
+}
+.con2 .container .left .arrow p{
+    margin-right: 10px;
+}
+.con2 .container .left .arrow{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    right:15px;
+    top: 42px;
+}
+.con2 .container .left .arrow img{
+    margin-left: 10px;
+}
+.con2 .hot100{
+    margin-top: 35px;
+}
+.con2 .hot100 li{
+    display: flex;
+    width: 270px;
+    margin-bottom: 29px;
+}
+.con2 .hot100::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.con2 .hot100 .figure{
+    width: 20px;
+    height: 60px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 4px solid #FF5500;
+    float: left;
+    margin-left: 20px;
+}
+.con2 .hot100 .ranking{
+    position: relative;
+    margin-left: 75px;
+}
+.con2 .hot100 .ranking .album{
+   width: 60px;
+   height: 60px;
+   background-image: url(/images/rank_1.png);
+   background-size: cover;
+   border-radius: 10px;
+}
+.con2 .hot100 li:nth-child(2) .ranking .album{
+   background-image: url(/images/rank_-1.png);
+
+}
+.con2 .hot100 li:nth-child(3) .ranking .album{
+   background-image: url(/images/rank_-2.png);
+
+}
+.con2 .hot100 li:nth-child(4) .ranking .album{
+   background-image: url(/images/rank_-3.png);
+
+}
+.con2 .hot100 li:nth-child(5) .ranking .album{
+   background-image: url(/images/rank_-4.png);
+   position: relative;
+}
+.con2 .hot100 li:nth-child(6) .ranking .album{
+   background-image: url(/images/rank_-5.png);
+   position: relative;
+
+}
+.con2 .hot100 li:nth-child(7) .ranking .album{
+   background-image: url(/images/rank_-6.png);
+   position: relative;
+}
+.con2 .hot100 li:nth-child(5) .figure{
+    border: none;
+}
+.con2 .hot100 li:nth-child(5) .up{
+    position: absolute;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #FF5500;
+}
+.con2 .hot100 li:nth-child(5) .uparrow{
+    position: absolute;
+    top:4px;
+    left:25px
+
+}
+.con2 .hot100 li:nth-child(6) .figure{
+    border: none;
+}
+.con2 .hot100 li:nth-child(6) .down{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #5773FF;
+}
+.con2 .hot100 li:nth-child(6) .downarrow{
+    position: absolute;
+    top:4px;
+    left:25px
+
+}
+.con2 .hot100 li:nth-child(7) .figure{
+    border: none;
+}
+.con2 .hot100 li:nth-child(7) .up{
+    position: absolute;
+    font-size: 20px;
+    color: #FF5500;
+    margin-top: 5px;
+}
+.con2 .hot100 li:nth-child(7) .uparrow{
+    position: absolute;
+    top:4px;
+    left:25px
+
+}
+.con2 .hot100 .ranking .song{
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    width: 300px;
+    text-align: left;
+}
+.con2 .hot100 .ranking .artist{
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    width: 110px;
+    text-align: left;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 15px;
+}
+/* left */
+.con2 .container .right .top{
+    margin-left: 120px;
+    width: 850px;
+    position: relative;
+    height: 340px;
+    margin-top: 60px;
+}
+.con2 .container .right .top .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    color: white;
+    width: 895px;
+    margin-left: 55px;
+}
+.con2 .container .right .top .arrow p{
+    margin-right: 10px;
+}
+.con2 .container .right .top .arrow{
+    position: absolute;
+    top: 42px;
+    right: -100px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+}
+.con2 .container .right .top .arrow img{
+    margin-left: 10px;
+    z-index: 99999;
+}
+.con2 .container .right .top ul{
+    display: flex;
+}
+.con2 .container .right .top ul li{
+    margin-top: 70px;
+    margin-left: 57px;
+}
+.con2 .container .right .top ul li .hot{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:center ;
+    background-image: url(/images/hot1.png);
+    margin-bottom: 15px;
+}
+
+.con2 .container .right .top ul li .hold .like{
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
+.con2 .container .right .top ul li .like img{
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    opacity: 1;
+    width: 64px;
+    height: 57px;
+}
+.con2 .container .right .top ul li:nth-child(2) .hot{
+    background-image: url(/images/hot2.png);
+}
+.con2 .container .right .top ul li:nth-child(3) .hot{
+    background-image: url(/images/hot3.png);
+}
+.con2 .container .right .top ul li:nth-child(4) .hot{
+    background-image: url(/images/hot4.png);
+}
+.con2 .container .right .top ul li:nth-child(5) .hot{
+    background-image: url(/images/hot5.png);
+}
+.con2 .container .right .top ul li p{
+    font-family: 'Roboto';
+    font-weight: 100;
+    padding-top: 5px;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+}
+.con2 .container .right .top ul li .star{
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/* right_top */
+.con2 .container .right .bottom{
+    margin-left: 120px;
+    width: 850px;
+    position: relative;
+    height: 350px;
+    margin-top: 60px;
+}
+.con2 .container .right .bottom .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    width: 895px;
+    color: white;
+    margin-left: 55px;
+}
+.con2 .container .right .bottom .arrow p{
+    margin-right: 10px;
+}
+.con2 .container .right .bottom .arrow{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    right: -80px;
+    top: 42px;
+}
+.con2 .container .right .bottom .arrow img{
+    margin-left: 10px;
+    z-index: 99999;
+}
+.con2 .container .right .bottom ul{
+    display: flex;
+}
+.con2 .container .right .bottom ul li{
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.con2 .container .right .bottom ul li .hot{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    background-image: url(/images/streaming1.png);
+    margin-bottom: 15px;
+    margin-left: 27px;
+}
+.con2 .container .right .bottom ul li:nth-child(2) .hot{
+    background-image: url(/images/streaming2.png);
+}
+.con2 .container .right .bottom ul li:nth-child(3) .hot{
+    background-image: url(/images/streaming3.png);
+}
+.con2 .container .right .bottom ul li:nth-child(4) .hot{
+    background-image: url(/images/streaming4.png);
+}
+.con2 .container .right .bottom ul li p{
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-left: 33px;
+}
+.con2 .container .right .bottom ul li .star{
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 33px;
+    margin-bottom: 10px;
+}
+/* con2 */
+.con3{
+    width: 1920px;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.con3 .user{
+    width: 205px;
+    height: 75px;
+    position: absolute;
+    right:100px;
+    top: 140px;
+    text-align: left;
+}
+.con3 .user p{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+}
+.con3 .user .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.con3 .user .icon .icon2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 500px;
+    background-color: #FF5500;
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+.con3 .container{
+    position: absolute;
+    top:200px;
+    display: flex;
+    
+}
+.con3 .container .left{
+    width: 700px;
+    position: relative;
+    height: 680px;
+    margin-left: 350px;
+}
+
+.con3 .container .left .top .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    color: white;
+    margin-left: 15px;
+}
+.con3 .container .left .top .arrow p{
+    margin-right: 10px;
+}
+.con3 .container .left .top .arrow{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    right:15px;
+    top: 42px;
+}
+.con3 .container .left .top .arrow img{
+    margin-left: 10px;
+    z-index: 99999;
+}
+.con3 .container .left .top ul{
+    display: flex;
+    justify-content: center;
+}
+.con3 .container .left .top ul li{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 45px;
+}
+.con3 .container .left .top ul li:first-child{
+    margin-left: 0;
+}
+.con3 .container .left .top ul li .douser{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:center ;
+    background-image: url(/images/top1.png);
+    margin-bottom: 15px;
+}
+.con3 .container .left .top ul li:nth-child(1) .douser{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:center ;
+    background-image: url(/images/top2.png);
+    margin-bottom: 15px;
+}
+.con3 .container .left .top ul li:nth-child(3) .douser{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:center ;
+    background-image: url(/images/top3.png);
+    margin-bottom: 15px;
+}
+.con3 .container .left .top ul li p{
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+}
+.con3 .container .left .top ul li .star{
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.con3 .container .left .top ul li:nth-child(2) .star{
+    font-size: 18px;
+}
+/* top */
+.con3 .container .left .bottom{
+    position: relative;
+}
+
+.con3 .container .left .bottom .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.con3 .container .left .bottom .arrow p{
+    margin-right: 10px;
+}
+.con3 .container .left .bottom .arrow{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    right:15px;
+    top: 42px;
+}
+.con3 .container .left .bottom .arrow img{
+    margin-left: 10px;
+    z-index: 99999;
+}
+.con3 .container .left .bottom .box{
+    display: flex;
+}
+.con3 .container .left .bottom .boxleft{
+    margin-left: 15px;
+    width: 320px;
+    height: 330px;
+}
+.con3 .container .left .bottom .box .boxleft ul li{
+    position: relative;
+    font-family: 'Roboto';
+    margin-bottom: 30px;
+}
+.con3 .container .left .bottom .box .boxleft ul li .boxalbum{
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_-6.png);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.con3 .container .left .bottom .box .boxleft ul li:nth-child(2) .boxalbum{
+    background-image: url(/images/rank_-4.png);
+}
+.con3 .container .left .bottom .box .boxleft ul li:nth-child(3) .boxalbum{
+    background-image: url(/images/rank_8.png);
+}
+.con3 .container .left .bottom .box .boxleft ul li .songname{
+    position: absolute;
+    top: 0;
+    left: 90px;
+    font-weight: 500;
+    color: white;
+}
+.con3 .container .left .bottom .box .boxleft ul li .time{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+}
+
+.con3 .container .left .bottom .box .boxleft ul li .coment{
+    position: absolute;
+    top: 26px;
+    left: 90px;
+    font-weight: 300;
+    font-weight: 100;
+    color: #CCCCCC;
+}
+.con3 .container .left .bottom .box .boxleft ul li .nickname{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+}
+/* left-left */
+.con3 .container .left .bottom .boxright{
+    margin-left: 20px;
+    width: 320px;
+    height: 330px;
+}
+.con3 .container .left .bottom .box .boxright ul li{
+    position: relative;
+    font-family: 'Roboto';
+    margin-bottom: 30px;
+}
+.con3 .container .left .bottom .box .boxright ul li .boxalbum{
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_9.png);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.con3 .container .left .bottom .box .boxright ul li:nth-child(2) .boxalbum{
+    background-image: url(/images/rank_1.png);
+}
+.con3 .container .left .bottom .box .boxright ul li:nth-child(3) .boxalbum{
+    background-image: url(/images/rank_7.png);
+}
+.con3 .container .left .bottom .box .boxright ul li .songname{
+    position: absolute;
+    top: 0;
+    left: 90px;
+    font-weight: 500;
+    color: white;
+}
+.con3 .container .left .bottom .box .boxright ul li .time{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+}
+
+.con3 .container .left .bottom .box .boxright ul li .coment{
+    position: absolute;
+    top: 26px;
+    left: 90px;
+    font-weight: 300;
+    font-weight: 100;
+    color: #CCCCCC
+}
+.con3 .container .left .bottom .box .boxright ul li .nickname{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+}
+/* left */
+.con3 .right{
+    width: 700px;
+    height: 680px;
+    margin-left:70px;
+}
+.con3 .container .right .head{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 35px;
+    color: white;
+    margin-left: 15px;
+}
+/* head */
+.con3 .container .right .arrow p{
+    margin-right: 10px;
+}
+.con3 .container .right .arrow{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    right:15px;
+    top: 42px;
+}
+.con3 .container .right .arrow img{
+    margin-left: 10px;
+    z-index: 99999;
+}
+/* arrow */
+
+.con3 .container .right .list{
+    width: 700px;
+    height: 605px;
+    background-color: #18181D;
+    margin-top: 30px;
+    border-radius: 30px;
+    position: relative;
+}
+.con3 .container .right .list .scroll{
+    position: absolute;
+    right: 0;
+    top: 45px;
+    border-radius: 50px;
+    width: 5px;
+    height: 525px;
+    right: 40px;
+    background-color: #515151;
+}
+.con3 .container .right .list .scrollpt{
+    position: absolute;
+    width: 5px;
+    height: 150px;
+    background-color: #FF5500;
+    border-radius: 50px;
+}
+.con3 .container .right .list ul li{
+    padding-top: 27px;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    position: relative;
+    width: 580px;
+}
+.con3 .container .right .list ul li .p1{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-weight: 500;
+    color: white;
+}
+.con3 .container .right .list ul li .p2{
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    font-weight: 300;
+    font-weight: 100;
+    color: #CCCCCC
+}
+.con3 .container .right .list ul li .p3{
+    position: absolute;
+    top: 55px;
+    right: 75px;
+    font-weight: 300;
+    font-weight: 100;
+    color: #CCCCCC
+}
+.con3 .container .right .list ul li .pors img{
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    font-weight: 300;
+    font-weight: 100;
+    color: #CCCCCC
+}
+.con3 .container .right .list ul li .pors .on{
+    display: none;
+}
+.con3 .container .right .list ul li .pors:hover .on{
+    display: block;
+}
+.con3 .container .right .list ul li .pors:hover .base{
+    display: none;
+}
+.con3 .container .right .list ul li .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_9.png);
+    border-radius: 100px;
+}
+.con3 .container .right .list ul li:nth-child(2) .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_8.png);
+    border-radius: 100px;
+}
+.con3 .container .right .list ul li:nth-child(3) .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_10.png);
+    border-radius: 100px;
+}
+.con3 .container .right .list ul li:nth-child(4) .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_11.png);
+    border-radius: 100px;
+}
+.con3 .container .right .list ul li:nth-child(5) .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_7.png);
+    border-radius: 100px;
+}
+.con3 .container .right .list ul li:nth-child(6) .boxalbum{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/rank_12.png);
+    border-radius: 100px;
+}
+.slick-track{
+    height: 100vh;
+}
