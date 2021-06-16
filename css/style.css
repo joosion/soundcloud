@@ -622,28 +622,28 @@ body{
    border-radius: 10px;
 }
 .con2 .hot100 li:nth-child(2) .ranking .album{
-   background-image: url(/images/rank_-1.png);
+   background-image: url(../images/rank_-1.png);
 
 }
 .con2 .hot100 li:nth-child(3) .ranking .album{
-   background-image: url(/images/rank_-2.png);
+   background-image: url(../images/rank_-2.png);
 
 }
 .con2 .hot100 li:nth-child(4) .ranking .album{
-   background-image: url(/images/rank_-3.png);
+   background-image: url(../images/rank_-3.png);
 
 }
 .con2 .hot100 li:nth-child(5) .ranking .album{
-   background-image: url(/images/rank_-4.png);
+   background-image: url(../images/rank_-4.png);
    position: relative;
 }
 .con2 .hot100 li:nth-child(6) .ranking .album{
-   background-image: url(/images/rank_-5.png);
+   background-image: url(../images/rank_-5.png);
    position: relative;
 
 }
 .con2 .hot100 li:nth-child(7) .ranking .album{
-   background-image: url(/images/rank_-6.png);
+   background-image: url(../images/rank_-6.png);
    position: relative;
 }
 .con2 .hot100 li:nth-child(5) .figure{
@@ -758,7 +758,7 @@ body{
     border-radius: 10px;
     background-size: cover;
     background-position:center ;
-    background-image: url(/images/hot1.png);
+    background-image: url(../images/hot1.png);
     margin-bottom: 15px;
 }
 
@@ -776,16 +776,16 @@ body{
     height: 57px;
 }
 .con2 .container .right .top ul li:nth-child(2) .hot{
-    background-image: url(/images/hot2.png);
+    background-image: url(../images/hot2.png);
 }
 .con2 .container .right .top ul li:nth-child(3) .hot{
-    background-image: url(/images/hot3.png);
+    background-image: url(../images/hot3.png);
 }
 .con2 .container .right .top ul li:nth-child(4) .hot{
-    background-image: url(/images/hot4.png);
+    background-image: url(../images/hot4.png);
 }
 .con2 .container .right .top ul li:nth-child(5) .hot{
-    background-image: url(/images/hot5.png);
+    background-image: url(../images/hot5.png);
 }
 .con2 .container .right .top ul li p{
     font-family: 'Roboto';
@@ -851,18 +851,18 @@ body{
     background-size: cover;
     background-position:center ;
     position: relative;
-    background-image: url(/images/streaming1.png);
+    background-image: url(../images/streaming1.png);
     margin-bottom: 15px;
     margin-left: 27px;
 }
 .con2 .container .right .bottom ul li:nth-child(2) .hot{
-    background-image: url(/images/streaming2.png);
+    background-image: url(../images/streaming2.png);
 }
 .con2 .container .right .bottom ul li:nth-child(3) .hot{
-    background-image: url(/images/streaming3.png);
+    background-image: url(../images/streaming3.png);
 }
 .con2 .container .right .bottom ul li:nth-child(4) .hot{
-    background-image: url(/images/streaming4.png);
+    background-image: url(../images/streaming4.png);
 }
 .con2 .container .right .bottom ul li p{
     font-family: 'Roboto';
@@ -981,7 +981,7 @@ body{
     border-radius: 10px;
     background-size: cover;
     background-position:center ;
-    background-image: url(/images/top1.png);
+    background-image: url(../images/top1.png);
     margin-bottom: 15px;
 }
 .con3 .container .left .top ul li:nth-child(1) .douser{
@@ -991,7 +991,7 @@ body{
     border-radius: 10px;
     background-size: cover;
     background-position:center ;
-    background-image: url(/images/top2.png);
+    background-image: url(../images/top2.png);
     margin-bottom: 15px;
 }
 .con3 .container .left .top ul li:nth-child(3) .douser{
@@ -1001,7 +1001,7 @@ body{
     border-radius: 10px;
     background-size: cover;
     background-position:center ;
-    background-image: url(/images/top3.png);
+    background-image: url(../images/top3.png);
     margin-bottom: 15px;
 }
 .con3 .container .left .top ul li p{
@@ -1069,16 +1069,16 @@ body{
 .con3 .container .left .bottom .box .boxleft ul li .boxalbum{
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_-6.png);
+    background-image: url(../images/rank_-6.png);
     border-radius: 5px;
     background-position: center;
     background-size: cover;
 }
 .con3 .container .left .bottom .box .boxleft ul li:nth-child(2) .boxalbum{
-    background-image: url(/images/rank_-4.png);
+    background-image: url(../images/rank_-4.png);
 }
 .con3 .container .left .bottom .box .boxleft ul li:nth-child(3) .boxalbum{
-    background-image: url(/images/rank_8.png);
+    background-image: url(../images/rank_8.png);
 }
 .con3 .container .left .bottom .box .boxleft ul li .songname{
     position: absolute;
@@ -1126,16 +1126,16 @@ body{
 .con3 .container .left .bottom .box .boxright ul li .boxalbum{
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_9.png);
+    background-image: url(../images/rank_9.png);
     border-radius: 5px;
     background-position: center;
     background-size: cover;
 }
 .con3 .container .left .bottom .box .boxright ul li:nth-child(2) .boxalbum{
-    background-image: url(/images/rank_1.png);
+    background-image: url(../images/rank_1.png);
 }
 .con3 .container .left .bottom .box .boxright ul li:nth-child(3) .boxalbum{
-    background-image: url(/images/rank_7.png);
+    background-image: url(../images/rank_7.png);
 }
 .con3 .container .left .bottom .box .boxright ul li .songname{
     position: absolute;
@@ -1279,42 +1279,42 @@ body{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_9.png);
+    background-image: url(../images/rank_9.png);
     border-radius: 100px;
 }
 .con3 .container .right .list ul li:nth-child(2) .boxalbum{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_8.png);
+    background-image: url(../images/rank_8.png);
     border-radius: 100px;
 }
 .con3 .container .right .list ul li:nth-child(3) .boxalbum{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_10.png);
+    background-image: url(../images/rank_10.png);
     border-radius: 100px;
 }
 .con3 .container .right .list ul li:nth-child(4) .boxalbum{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_11.png);
+    background-image: url(../images/rank_11.png);
     border-radius: 100px;
 }
 .con3 .container .right .list ul li:nth-child(5) .boxalbum{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_7.png);
+    background-image: url(../images/rank_7.png);
     border-radius: 100px;
 }
 .con3 .container .right .list ul li:nth-child(6) .boxalbum{
     display: flex;
     width: 70px;
     height: 70px;
-    background-image: url(/images/rank_12.png);
+    background-image: url(../images/rank_12.png);
     border-radius: 100px;
 }
 .slick-track{
