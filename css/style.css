@@ -140,7 +140,7 @@ body{
 .con1 header .user p{
     color: white;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight:300;
     font-size: 25px;
 }
 .con1 header .user .icon{
@@ -567,7 +567,7 @@ body{
 }
 .con2 .container .left .head{
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight:500;
     font-size: 20px;
     text-align: left;
     padding-top: 35px;
@@ -696,7 +696,7 @@ body{
     top: 5px;
     left: 90px;
     font-family: 'Roboto';
-    font-weight: 700;
+    font-weight:bold;
     font-size: 20px;
     width: 300px;
     text-align: left;
@@ -797,7 +797,7 @@ body{
 }
 .con2 .container .right .top ul li .star{
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight:400;
     color: #CCCCCC;
     text-align: center;
     font-size: 15px;
