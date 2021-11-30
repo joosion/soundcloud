@@ -20,7 +20,8 @@ body{
     position: fixed;
     top: 30px;
     opacity: 0;
-    left: 480px;
+    left: 50%;
+    transform: translate(-50%);
     font-family:'Roboto';
     font-weight: 100;
     color: white;
@@ -114,6 +115,8 @@ body{
     height: 100vh;
     background-image: url(../images/con1.png);
     position: relative;
+    background-size: cover;
+    background-position: center;
 
 }
 .con1 header{
@@ -188,18 +191,26 @@ body{
     font-weight: 300;
 }
 /* header */
-.con1 .cdroom .cd{
+.con1 .cdroom{
     position: absolute;
-    bottom: 70px;
-    right: 70px;
+    right: 25%;
+    top: 200px;
+    height: 100%;
+    width: 700px;
+}
+.con1 .cdroom .cd{
+    margin-left: 60%;
     width: 700px;
     height: 700px;
+    background-image: url(/images/cd.png);
+    background-position: center;
+    background-size: cover;
 }
 .con1 .cdroom .cd{
     animation: rotate_image 60s linear infinite;
-    transform-origin: 50% 50%;
 }
  
+
 @keyframes rotate_image{
 	100% {
     	transform: rotate(360deg);
@@ -207,58 +218,41 @@ body{
 }
 .con1 .play{
     position: absolute;
-    right: 510px;
-    top: 455px;
-}
-.con1 .play img{
-    position: absolute;
-}
-.con1 .play .on{
-    display: none;
-}
-.con1 .play:hover .on{
+    background-image: url(/images/play.png);
+    width: 170px;
+    right: -23%;
+    top: 255px;
+    height: 170px;
+    z-index: 1;
     display: block;
+
 }
-.con1 .play:hover .base{
-    display: none;
+.con1 .play:hover{
+    background-image: url(/images/play.on.png);
 }
-/* play */
 .con1 .prv{
     position: absolute;
-    right: 630px;
-    top: 510px;
+    top: 310px;
+    right:20%;
+    width: 77px;
+    height: 59px;
+    background-image: url(/images/prv.png);
 }
-.con1 .prv img{
-    position: absolute;
-}
-.con1 .prv .on{
-    display: none;
-}
-.con1 .prv:hover .on{
-    display: block;
-}
-.con1 .prv:hover .base{
-    display: none;
-}
-/* pry */
 .con1 .nxt{
     position: absolute;
-    right: 295px;
-    top: 510px;
+    top: 310px;
+    width: 77px;
+    height: 59px;
+    background-image: url(/images/next.png);
+    right: -50%;
 }
-.con1 .nxt img{
-    position: absolute;
+.con1 .prv:hover{
+    background-image: url(/images/prv.on.png);
 }
-.con1 .nxt .on{
-    display: none;
+.con1 .nxt:hover{
+    background-image: url(/images/next.on.png);
 }
-.con1 .nxt:hover .on{
-    display: block;
-}
-.con1 .nxt:hover .base{
-    display: none;
-}
-/* nxt */
+
 .con1 .txt{
     text-align: left;
     position: absolute;
@@ -551,6 +545,8 @@ body{
 /* header */
 .con2 .container{
     display: flex;
+    width: 1920px;
+    margin: 0 auto;
 }
 .con2 .container .left{
     margin-top: 60px;
@@ -896,7 +892,7 @@ body{
     height: 75px;
     position: absolute;
     right:100px;
-    top: 140px;
+    top: 60px;
     text-align: left;
 }
 .con3 .user p{
@@ -926,8 +922,9 @@ body{
     line-height: 25px;
 }
 .con3 .container{
-    position: absolute;
-    top:200px;
+    width: 1920px;
+    margin: 0 auto;
+    margin-top: 100px;
     display: flex;
     
 }
@@ -1185,17 +1182,19 @@ body{
     margin-left: 15px;
 }
 /* head */
-.con3 .container .right .arrow p{
+.con3 .container .head_set{
+    display: flex;
+    justify-content: space-between;
+}
+.con3 .container .right .arrow{
     margin-right: 10px;
 }
 .con3 .container .right .arrow{
-    position: absolute;
     font-family: 'Roboto';
     font-weight: 500;
     color: white;
     font-size: 15px;
-    right:15px;
-    top: 42px;
+    padding-top: 35px;
 }
 .con3 .container .right .arrow img{
     margin-left: 10px;
